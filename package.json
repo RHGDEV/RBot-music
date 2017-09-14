@@ -1,0 +1,19 @@
+{
+  "name": "rbot",
+  "version": "1.0.0",
+  "description": "Discord music bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines":{
+	"node": "8.0.0"
+  },
+  "author": "RHG#0822",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.2.1",
+    "opusscript": "0.0.3",
+    "ytdl-core": "^0.17.1"
+  }
+}

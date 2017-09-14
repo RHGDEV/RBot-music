@@ -1,0 +1,8 @@
+{
+	"name": "RBot Music",
+	"description": "Music bot by RHG#0822",
+	"repository": "https://github.com/CrawlingArc33/rb-music",
+	"logo": "http://node-js-sample.herokuapp.com/node.svg",
+	"keywords": ["node", "bot", "music"],
+	"image": "heroki/nodejs"
+}
