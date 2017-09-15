@@ -1,6 +1,7 @@
 const Discord = require("discord.js");
 const blacklist = require("./blacklist.json");
 const YTDL = require("ytdl-core")
+const FFMPEG = require("ffmpeg")
 const prefix = process.env.PREFIX
 const mastid = process.env.MASTER_ID
 
