@@ -66,7 +66,7 @@ bot.on("message", function(message){
     case "8ball":
 
         if (args[1]) {
-          message.channel.send("Here's my answer for **" + message.author + "**\n" + fortunes[Math.floor(Math.random() * fortunes.length)])
+          message.channel.send("Here's my answer for **" + message.author + "**\n" + eightball[Math.floor(Math.random() * eightball.length)])
         } else {
           message.channel.send("Could you send a question to ask?")
         }
