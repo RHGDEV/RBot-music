@@ -189,7 +189,6 @@ bot.on("ready", function(){
   console.log(`~ Prefix: ${prefix}`);
   console.log(`~ Serving: ${bot.guilds.array().length} guild(s)`)
   console.log(`~ Creator id: ${mastid}`)
-  console.log(`~ Bot id: ${config.botid}`)
   console.log(``);
   console.log(`~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`);
   console.log(`RBOT MUSIC IS READY!`);
