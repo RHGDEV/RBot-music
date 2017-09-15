@@ -17,7 +17,7 @@
     "request": "2.81.0",
     "opusscript": "0.0.3",
     "ytdl-core": "^0.17.1",
-    "ffmpeg": "5.4.2",
+    "ffmpeg": "0.0.4",
     "node-ffmpeg": "5.4.2"
   }
 }
