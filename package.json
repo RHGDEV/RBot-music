@@ -8,7 +8,7 @@
   },
   "engines":{
 	"node": "8.0.0",
-	"ffmpeg": "0.0.4"
+	"FFmpeg": "3.3.4"
   },
   "author": "RHG#0822",
   "license": "ISC",
