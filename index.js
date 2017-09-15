@@ -1,7 +1,8 @@
 const Discord = require("discord.js");
 const blacklist = require("./blacklist.json");
 const YTDL = require("ytdl-core")
-const prefix = "rb"
+const prefix = process.env.PREFIX
+const mastid = process.env.MASTER_ID
 
 
 var bot = new Discord.Client();
@@ -134,7 +135,7 @@ bot.on("message", function(message){
         message.member.voiceChannel.join()
         break;
      case "kill":
-        if (!message.author.id == 140487710727995392){
+        if (!message.author.id == mastid){
           console.log(`[KILL ATTEMPT] ${message.author.username}#${message.author.discriminator} | ${message.guild.name} | ${message.channel.name}`);
           break;
         }
@@ -155,7 +156,7 @@ bot.on("message", function(message){
           })
           break;
      case "l":
-          if (!message.author.id == 140487710727995392){
+          if (!message.author.id == mastid){
             console.log(`[LEAVE ATTEMPT] ${message.author.username}#${message.author.discriminator} | ${message.guild.name} | ${message.channel.name}`);
             break;
           }
@@ -185,16 +186,16 @@ bot.on("ready", function(){
   console.log(`~~~~~~~~~~~~~  RBOT MUSIC  ~~~~~~~~~~~~~~`);
   console.log(``);
   console.log(`~ Bot Name: ${bot.user.username}`);
-  console.log(`~ Prefix: ${config.prefix}`);
+  console.log(`~ Prefix: ${prefix}`);
   console.log(`~ Serving: ${bot.guilds.array().length} guild(s)`)
-  console.log(`~ Creator id: ${config.creatorid}`)
+  console.log(`~ Creator id: ${mastid}`)
   console.log(`~ Bot id: ${config.botid}`)
   console.log(``);
   console.log(`~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`);
   console.log(`RBOT MUSIC IS READY!`);
   console.log(``);
   // Set game
-  bot.user.setGame(config.prefix + "help");
+  bot.user.setGame(prefix + "help");
 
   //blacklist helper
   bot.guilds.forEach(async (guild, id) => {
