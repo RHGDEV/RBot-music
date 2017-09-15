@@ -62,16 +62,7 @@ bot.on("message", function(message){
           message.channel.send({embed: em});
         break;
 
-    case "8ball":
-
-        if (args[1]) {
-          message.channel.send("Here's my answer for **" + message.author + "**\n" + fortunes[Math.floor(Math.random() * fortunes.length)])
-        } else {
-          message.channel.send("Could you send a question to ask?")
-        }
-        removedat(message)
-        break;
-
+ 
     case "play":
         if (!args[1]) {
           removedat(message)
@@ -155,7 +146,7 @@ bot.on("message", function(message){
           .setDescription("RBot music will now shutdown until reopened")
           .setTimestamp()
 
-          message.channel.send({embed: killem});
+          //message.channel.send({embed: killem});
 
           bot.destroy().then(function(){
             console.log(``)
@@ -257,4 +248,4 @@ bot.on('guildCreate', guild => {
   });
 });
 
-bot.login(config.token)
+bot.login(proces.env.BOT_TOKEN)
