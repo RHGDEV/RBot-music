@@ -38,8 +38,8 @@ console.log(`Now loading RBot Music...`)
 
 bot.on("message", function(message){
   if (message.author.equals(bot.user))  return;
-  if (message.author.equals(bot.user))  return;
-  if (!message.author.id == config.creatorid){
+ // if (message.author.equals(bot.user))  return;
+  if (!message.author.id == mastid){
     if (message.channel.type === "dm") return;;
   }
   if (!message.content.startsWith(prefix)) return;
