@@ -8,19 +8,11 @@ The bot isn't really stable for users, but to use this you'll need to recode it 
 
 ### Commands
 
-Commands are listed [here](https://github.com/SexualRhinoceros/MusicBot/wiki/Commands "Commands list").
+Commands are listed [here](https://github.com/ "List Soon")
 
 ### Configuration
 
 Configuration isn't really a thing with this bot, sorry..
 
-### Great, now how do I use it?
-Download the bot, set the dependencies up, then run `runbot.bat`! (or `run.sh` on mac/linux)  Read the tutorial if you don't know what to do.
 
-If you have any errors, read the FAQ. If that didn't help, you can ask for assistance on the discord help server. Is is recommended to take screenshots so the developers can see errors.
-
-[Rhino Help Server](http://discord.me/rhinohelp "Discord link")
-
-### FAQ
-
-Some frequently asked questions are listed on the wiki [here](https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ "Wiki").
+[Help Server](http://discordapp.com "Discord link")
