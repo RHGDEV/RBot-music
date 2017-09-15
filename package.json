@@ -7,8 +7,7 @@
     "start": "node index.js"
   },
   "engines":{
-	"node": "8.0.0",
-	"FFmpeg": "3.3.4"
+	"node": "8.0.0"
   },
   "author": "RHG#0822",
   "license": "ISC",
@@ -17,7 +16,6 @@
     "request": "2.81.0",
     "opusscript": "0.0.3",
     "ytdl-core": "^0.17.1",
-    "ffmpeg": "0.0.4",
-    "node-ffmpeg": "5.4.2"
+    "ffmpeg": "0.0.4"
   }
 }
