@@ -1,11 +1,10 @@
 const Discord = require("discord.js");
-const config = require("./config.json");
 const blacklist = require("./blacklist.json");
 const YTDL = require("ytdl-core")
+const prefix = "rb"
 
 
 var bot = new Discord.Client();
-var fortunes = config.eightball
 var servers = {};
 
 function play(connect, msg) {
@@ -42,9 +41,9 @@ bot.on("message", function(message){
   if (!message.author.id == config.creatorid){
     if (message.channel.type === "dm") return;;
   }
-  if (!message.content.startsWith(config.prefix)) return;
+  if (!message.content.startsWith(prefix)) return;
 
-  var args = message.content.substring(config.prefix.length).split(" ");
+  var args = message.content.substring(prefix.length).split(" ");
 
   switch (args[0].toLowerCase()) {
     case "help":
@@ -53,10 +52,10 @@ bot.on("message", function(message){
           .setColor("#FFFFFF")
           .setTitle("REAAALY Jeff? Really?")
           .setDescription("Fine I'm simply a simple musicbot by RHG#0822")
-          .addField(`${config.prefix}help`, `Sends this message.`)
-          .addField(`${config.prefix}play (Youtube link)`, `Plays a song in the current channel.`)
-          .addField(`${config.prefix}skip`, `Skips the current song`)
-          .addField(`${config.prefix}8ball (Question)`, `I just got bored okay..`)
+          .addField(`${prefix}help`, `Sends this message.`)
+          .addField(`${prefix}play (Youtube link)`, `Plays a song in the current channel.`)
+          .addField(`${prefix}skip`, `Skips the current song`)
+          .addField(`${prefix}8ball (Question)`, `I just got bored okay..`)
           .setFooter("RBot Music | A simple music bot", bot.user.avatarURL)
 
           message.channel.send({embed: em});
@@ -135,7 +134,7 @@ bot.on("message", function(message){
         message.member.voiceChannel.join()
         break;
      case "kill":
-        if (!message.author.id == config.creatorid){
+        if (!message.author.id == 140487710727995392){
           console.log(`[KILL ATTEMPT] ${message.author.username}#${message.author.discriminator} | ${message.guild.name} | ${message.channel.name}`);
           break;
         }
@@ -156,7 +155,7 @@ bot.on("message", function(message){
           })
           break;
      case "l":
-          if (!message.author.id == config.creatorid){
+          if (!message.author.id == 140487710727995392){
             console.log(`[LEAVE ATTEMPT] ${message.author.username}#${message.author.discriminator} | ${message.guild.name} | ${message.channel.name}`);
             break;
           }
