@@ -4,6 +4,7 @@ const YTDL = require("ytdl-core")
 const FFMPEG = require("ffmpeg")
 const prefix = process.env.PREFIX
 const mastid = process.env.MASTER_ID
+const eightball = process.env.EBALL
 
 
 var bot = new Discord.Client();
@@ -62,7 +63,15 @@ bot.on("message", function(message){
 
           message.channel.send({embed: em});
         break;
+    case "8ball":
 
+        if (args[1]) {
+          message.channel.send("Here's my answer for **" + message.author + "**\n" + fortunes[Math.floor(Math.random() * fortunes.length)])
+        } else {
+          message.channel.send("Could you send a question to ask?")
+        }
+        removedat(message)
+        break;
  
     case "play":
         if (!args[1]) {
@@ -238,10 +247,10 @@ bot.on('guildCreate', guild => {
       .setColor("#FFFFFF")
       .setTitle(`${guild.owner.user.username}, I have been welcomed into ${guild.name}`)
       .setDescription("I'm simply a simple musicbot by RHG#0822")
-      .addField(`${config.prefix}help`, `Sends a help message.`)
-      .addField(`${config.prefix}play (Youtube link)`, `Plays a song in the current channel.`)
-      .addField(`${config.prefix}skip`, `Skips the current song`)
-      .addField(`${config.prefix}8ball (Question)`, `I just got bored okay..`)
+      .addField(`${prefix}help`, `Sends a help message.`)
+      .addField(`${prefix}play (Youtube link)`, `Plays a song in the current channel.`)
+      .addField(`${prefix}skip`, `Skips the current song`)
+      .addField(`${prefix}8ball (Question)`, `I just got bored okay..`)
       .setFooter("RBot Music | A simple music bot", bot.user.avatarURL)
 
     guild.owner.user.dmChannel.send({embed: joinem});
