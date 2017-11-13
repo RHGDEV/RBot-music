@@ -1,1 +1,1 @@
-https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git
+heroku buildpacks:set https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest -a my-app
