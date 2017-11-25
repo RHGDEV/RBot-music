@@ -1,5 +1,5 @@
 {
-  "name": "rbot",
+  "name": "rbot-music",
   "version": "1.0.0",
   "description": "Discord music bot",
   "main": "index.js",
@@ -13,9 +13,11 @@
   "license": "ISC",
   "dependencies": {
     "discord.js": "^11.2.1",
-    "request": "2.81.0",
-    "opusscript": "0.0.3",
+    "request": "^2.81.0",
+    "opusscript": "^0.0.4",
     "ytdl-core": "^0.17.1",
-    "ffmpeg": "0.0.4"
+    "ffmpeg": "^0.0.4",
+    "ffmpeg-binaries": "^3.2.2-3",
+    "node-opus": "^0.2.7"
   }
 }
